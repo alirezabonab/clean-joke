@@ -1,0 +1,45 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
+        "plugin:prettier/recommended" // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2020, // Allows for the parsing of modern ECMAScript features
+        "sourceType": "module" // Allows for the use of imports
+    },
+    "rules": {
+        "no-restricted-syntax": "off",
+        "import/no-cycle": "off",
+        "max-classes-per-file": "off",
+        "indent": [
+            "error",
+            2,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "no-console": 1,
+        "eol-last": 2,
+        "@typescript-eslint/semi": [
+            "error"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "no-duplicate-imports": "error",
+        "no-return-await": "error"
+    }
+}
