@@ -43,6 +43,7 @@ export class ExpressApp {
 
   public listen() {
     this.app.listen(this.port, () => {
+      // eslint-disable-next-line no-console
       console.log(`App listening on the http://localhost:${this.port}`);
     });
   }
