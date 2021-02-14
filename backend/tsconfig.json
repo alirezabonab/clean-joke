@@ -20,6 +20,7 @@
     "allowSyntheticDefaultImports": true,
     "strictPropertyInitialization": false,
     "noImplicitAny": true,
+    "allowJs": true
   },
   "include": [
     "./src/**/*.ts"
