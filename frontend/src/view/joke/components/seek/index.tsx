@@ -14,6 +14,6 @@ export default function Seek(props: Props) {
       type='number'
       value={seek}
       onChange={e => setSeek(Number.parseInt(e.target.value))} ></input>
-    <input type='button' value='seek' onClick={() => { props.setSeekNumber(seek); }}></input>
+    <input type='button' value='list jokes' onClick={() => { props.setSeekNumber(seek); }}></input>
   </div>;
 }

@@ -28,6 +28,10 @@ export default function JokeStatistics(props: Props) {
 
   return <div className="Container Column">
     <h3>Joke Statistics</h3>
-    <div>{JSON.stringify(statistics)}</div>
+    <div>upvotes average: {statistics?.upvotesAverage}</div>
+    <div>downvotes average: {statistics?.downvotesAverage}</div>
+    <div>first letter of last joke occurrance: {statistics?.firstLetterOccurrence}</div>
+    <div>sum jokes length: {statistics?.sumJokesLength}</div>
+    <div>most common letter: {statistics?.mostCommonLetterInAllJokes}</div>
   </div>;
 }

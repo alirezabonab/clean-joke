@@ -11,3 +11,7 @@
 .Column {
   flex-direction: column;
 }
+
+div {
+  margin: 4px;
+}

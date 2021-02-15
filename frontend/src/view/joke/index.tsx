@@ -17,8 +17,8 @@ export default function JokeView() {
   return (
     <div className="Container Column">
       <Seek setSeekNumber={fetchJokes}></Seek>
-      <JokeList jokes={jokes}></JokeList>
-      <JokeStatistics jokes={jokes}></JokeStatistics>
+      {jokes.length > 0 && <JokeList jokes={jokes}></JokeList>}
+      {jokes.length > 0 && <JokeStatistics jokes={jokes}></JokeStatistics>}
     </div>
   );
 };
