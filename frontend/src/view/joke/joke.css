@@ -1,0 +1,13 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.Row {
+  flex-direction: row;
+}
+
+.Column {
+  flex-direction: column;
+}
