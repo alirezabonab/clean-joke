@@ -16,6 +16,11 @@ To start just run:
 docker-compose up -d
 ```
 
+then open:
+```
+http://localhost:3000
+```
+
 # Clean Architecture
 The backend is using clean architecture pattern.
 
